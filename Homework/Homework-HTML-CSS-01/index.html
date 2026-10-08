@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .menu a{ 
+        /*   a -> tag <a>   .a -> class="a"   #a -> id="a"   */ 
+        border-right: 3px solid;
+        border-collapse: collapse;
+        border-right-color: rgb(241, 64, 10);
+        padding-inline: 20px;
+        font-size: 20px;
+        }
+        .menu a:last-child{
+            border-right: none;
+        }
+         .name{
+            margin-left: 20px;
+        }
+        .role{
+            margin-left: 20px;
+        }
+        .profile-img{
+        width: 200px;
+        height: 150px;
+        border-radius: 50%; /* เปลี่ยนเป็นวง */
+        object-fit: cover; /* crop รูปให้เต็มวงกลมโดยไม่ทำให้ภาพเบี้ยว */
+        }
+        .desc{
+            font-size: 17px;
+            font-family: monospace;
+        }
+        .info{
+            font-size: 17px;
+        }
+        .skill-list li{
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <hr style="margin-top: 20px;">
+    <nav class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./work.html">Work Experience</a>
+        <a href="./contact.html">Contact Me</a>
+    </nav>
+    <hr style="margin-top: 10px;">
+    <h1 class="name">Apivitch Boosamalee</h1>
+    <h2 class="role">Full-Stack Developer</h2>
+    <img class="profile-img" src="./pic/pokemon.jpg" alt="pokemon">
+    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae odit facilis dignissimos et explicabo corrupti inventore accusamus nobis! Reprehenderit, libero! Perspiciatis nulla libero aperiam alias animi rerum debitis excepturi amet reprehenderit porro recusandae nihil ducimus necessitatibus, saepe sapiente numquam et, corrupti ipsum aliquam eum hic veritatis? Animi, doloremque facilis.   
+    </p>
+    <hr>
+    <h3><ins>Personal Info</ins></h3>
+    <div class="info">
+        <p><strong>Location :</strong> Rangsit, Pathumthani </p>
+        <p><strong>Phone :</strong> (+66)95-9354321 </p>
+        <p><strong>Email :</strong> apivitch.b@gmail.com</p>
+        <p><strong>Line ID :</strong> untype0016 </p>
+    </div>
+    <hr>
+    <h3><ins>Skills</ins></h3>
+    <ul class="skill-list">
+        <li>UX/UI Design</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>MySQL</li>
+    </ul>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .menu a{ 
+            border-right: 3px solid;
+            border-collapse: collapse;
+            border-right-color: rgb(241, 64, 10);
+            padding-inline: 20px;
+            font-size: 20px;
+        }
+        .menu a:last-child{
+            border-right: none;
+        }
+        .contact-head{
+            margin-left: 20px;
+        }
+        .form1{
+            margin-inline: 30px;
+            border: solid black 3px;
+            width: 80%;
+            padding: 30px;
+        }
+        .enter-info{
+            font-size: 30px;
+            margin-bottom: 60px;
+        }
+        .input-name, .input-email{
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .form1 label{
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .form1 #name, .form1 #email { /* box adjust */
+            font-size: 30px;
+            width: 70%;
+            margin-top: 10px;
+            padding-inline: 20px;
+            box-sizing: border-box;
+        }
+        .gender {
+            font-weight: bold;
+        }
+        .gender select{
+            width: 70%;
+            font-size: 30px;
+            padding-inline: 20px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+        .form1 #message{
+            font-size: 30px;
+            width: 70%;
+            height:300px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        .two-button{
+            text-align: right;
+            width: 70%;
+        }
+        .form1 button{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <hr style="margin-top: 20px;">
+    <nav class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./work.html">Work Experience</a>
+        <a href="./contact.html">Contact Me</a>
+    </nav>
+    <hr style="margin-top: 10px;">
+    <h1 class="contact-head"> Contact Me </h1>
+    <form class="form1">
+        <h2 class="enter-info"><ins> Enter your info </ins></h2>
+        <div class="input-name">
+            <label for="name"> Enter your name : </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="input-email">
+            <label for="email"> Enter your E-mail : </label>
+            <input type="email" name="email" id="email"> 
+            <!-- ถ้าไม่ใส่ @ จะมีboxแจ้งเตือนแต่เราadjust boxนั้นไม่ได้ ดังนั้นจึงไม่ค่อยใช้ ใช้แบบปกติแล้วทำ warning เองดีกว่า  -->
+        </div> 
+        <div class="gender">
+            <label for="gender"> Gender </label>
+            <select name="gender" id="gender">
+                <option value="Male"> Male </option>
+                <option value="Female"> Female </option>
+            </select>
+        </div>
+        <label for="message"> Message </label>
+        <textarea name="message" id="message"></textarea>
+        <div class="two-button">
+        <button type="submit"> Send </button>
+        <button type="reset"> clear </button>
+        </div>
+    </form>
+</body>
+</html>

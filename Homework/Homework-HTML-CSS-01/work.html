@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        .menu a{ 
+        border-right: 3px solid;
+        border-collapse: collapse;
+        border-right-color: rgb(241, 64, 10);
+        padding-inline: 20px;
+        font-size: 20px;
+        }
+        .menu a:last-child{
+            border-right: none;
+        }
+         .work{
+            margin-top: 20px;
+            margin-left: 20px;
+            border: solid;
+            height: fit-content;
+            width: fit-content;
+            padding-inline: 100px;
+            margin-inline: auto;
+         }
+         .work-pic{
+            margin-top: 20px;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            display: block; 
+            margin-inline: auto;
+         }
+         .work-table{
+            margin-top: 30px;
+            width: 100%;
+            border-collapse: collapse;
+         }
+         .work-table th,td {
+            border: solid black 3px;
+            padding-block: 30px;
+            padding-left: 5px;
+         }
+         .work-table th {
+            font-size: 30px;
+            font-family: cursive;
+         }
+         .work-table td {
+            font-size: 20px;
+         }
+    </style>
+</head>
+
+<body>
+    <hr style="margin-top: 20px;">
+    <nav class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./education.html">Education</a>
+        <a href="./work.html">Work Experience</a>
+        <a href="./contact.html">Contact Me</a>
+    </nav>
+    <hr style="margin-top: 10px;">
+    <h1 class="work">Work Experience</h1>
+    <img class="work-pic" src="./pic/work-experience.jpg" alt="work-pic">
+    <table class="work-table">
+        <tr>
+            <th> Year </th>
+            <th> Job Title </th>
+            <th> Company </th>
+        </tr>
+        <tr>
+            <td> 2022 </td>
+            <td> Medical device Product Specialist </td>
+            <td> S.M.J. Inter Product </td>
+        </tr>
+        <tr>
+            <td> 2024 </td>
+            <td> Senior Medical device Procut Specialist </td>
+            <td> S.M.J. Inter Product </td>
+        </tr>
+        <tr>
+            <td> 2025 </td>
+            <td> Sleep </td>
+            <td> Home.Business Company </td>
+        </tr>
+    </table>
+</body>
+</html>
